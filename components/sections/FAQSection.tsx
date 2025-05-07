@@ -41,20 +41,24 @@ const FAQSection = () => {
     <section id="faq" className="py-24">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-amber-800 dark:text-amber-500 font-medium mb-3">FAQ</h2>
+          <h2 className="text-amber-800 dark:text-amber-500 font-medium mb-3">
+            FAQ
+          </h2>
           <h3 className="font-playfair text-3xl md:text-4xl font-bold mb-6 leading-tight">
             Frequently Asked Questions
           </h3>
           <p className="text-gray-700 dark:text-gray-300">
-            Find answers to common questions about our products, processes, and services. If you don't see your question here, feel free to contact us directly.
+            Find answers to common questions about our products, processes, and
+            services. If you don&quot;t see your question here, feel free to
+            contact us directly.
           </p>
         </div>
-        
+
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-sm px-6"
               >
@@ -67,10 +71,11 @@ const FAQSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
-          
+
           <div className="mt-12 text-center">
             <p className="text-gray-700 dark:text-gray-300 mb-6">
-              Can't find the answer you're looking for? Contact our customer support team.
+              Can&quot;t find the answer you&quot;re looking for? Contact our
+              customer support team.
             </p>
             <Button className="bg-amber-700 hover:bg-amber-800 text-white">
               <MessageSquare className="mr-2 h-4 w-4" /> Get in Touch
@@ -79,7 +84,7 @@ const FAQSection = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default FAQSection

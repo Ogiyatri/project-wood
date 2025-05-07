@@ -104,7 +104,7 @@ const ProductsSection = () => {
     : products.filter(product => product.category === selectedCategory)
 
   return (
-    <section id="products" className="py-24">
+    <section id="products">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-amber-800 dark:text-amber-500 font-medium mb-3">Our Products</h2>
